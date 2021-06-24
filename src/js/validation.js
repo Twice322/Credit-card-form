@@ -1,12 +1,6 @@
 export default function validate() {
   const cardNumberInput = document.querySelector("#card_number");
-  const cardOwnerInput = document.querySelector("#card_owner");
-  const cardMonthInput = document.querySelector("#card_month");
-  const cardYearInput = document.querySelector("#card_year");
-  const cardCvvInput = document.querySelector(".card_cvv");
   const inputs = document.querySelectorAll("input");
-  const submitBtn = document.querySelector(".submit_btn");
-  const form = document.querySelector("form");
   const CURRENT_DATE = new Date(Date.now());
 
   let errors = 0;

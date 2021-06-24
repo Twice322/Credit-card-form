@@ -21,6 +21,10 @@ export default function virtualCard() {
       position = target.selectionEnd,
       length = target.value.length;
     if (event.inputType === "deleteContentBackward") {
+      if (!cardNumberInput.value) {
+        virtualCardTextArea.textContent = 'XXXX XXXX XXXX XXXX'
+        return
+      }
       const newInputValue =
         cardNumberInput.value.slice(0, target.selectionEnd) +
         "" +
